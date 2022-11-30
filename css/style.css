@@ -1,0 +1,694 @@
+  /*
+  Directory for search:
+  - Corner deco
+  - Preloader
+  - Navbar
+  - Back to top
+  - Welcome
+  - Challenge
+  - Gallery
+  - Game
+  - About us
+  - Team
+  - Contact
+  - Gallery page
+  - Game Page
+  - Map Page
+  - Footer
+  - Media Querys
+  */
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Six+Caps');
+
+body{
+    background-color: #232323;
+    background-image: url('../images/design/light-paper-fibers.png');
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-family: 'Six Caps', sans-serif;
+    color: #e7b333;
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Six Caps', sans-serif;
+    color: #000;
+}
+.container{
+    padding: 50px 0px 50px 0px;
+}
+  /* ------------------- Corner deco section -------------------*/
+.top-left{
+    background-image: url('../images/design/cornerleft.png');
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    z-index: 0;
+}
+.top-right{
+    background-image: url('../images/design/cornerright.png');
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    top: -3px;
+    right: -4px;
+}
+.top-left-bottom{
+    background-image: url('../images/design/cornerleftb.png');
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    bottom: -3px;
+    left: -4px;
+}
+.top-right-bottom{
+    background-image: url('../images/design/cornerrightb.png');
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    position: absolute;
+    bottom: -4px;
+    right: -3px;
+}
+.top-right-2{
+    background-image: url('../images/design/topright2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.top-left-2{
+    background-image: url('../images/design/topleft2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.bottom-left-2{
+    background-image: url('../images/design/bottomleft2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.bottom-right-2{
+    background-image: url('../images/design/bottomright2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#gradientright{
+    background-image: url("../images/design/gradientright.png");
+    position: absolute;
+    width: 100%;
+    height: 89%;
+    top: 0px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+#gradientleft{
+    background-image: url("../images/design/gradient.png");
+    position: absolute;
+    width: 100%;
+    height: 89%;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.options{
+    border: 10px solid #dab677; 
+    z-index: 20;
+}
+  /* ------------------- Preloader section -------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232323;
+    z-index: 99999;
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(/images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+  }
+  /* ------------------- Navbar section -------------------*/
+#brand{
+    position: absolute;
+    top: -40px;
+    left: -80px;
+    z-index: 9999;
+}
+.navbar{
+    border:none;
+    padding: none;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+	border: none;
+}
+.navbar-default {
+    background-image: url("../images/design/light-paper-fibers.png");
+    background-color: #b99556;
+    border-top: 10px solid #ea8461;
+    border-bottom: none;
+    float: none;
+    z-index: 9999;
+}
+.navbar-default .navbar-toggle {
+	color: #fff; 
+	border: none;
+	padding: 0 5px;
+}
+.navbar-default .nav li {
+	padding: 20px 90px 20px 90px;
+}
+.navbar-default .nav li a {
+	color: #232323;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 40px;
+	display: inline-block;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+.navbar-default .nav li a:hover {
+	outline: 0;
+    color: #fff;
+}
+.navbar-default .nav li a:active {
+    background-color: transparent;
+    color: #232323;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-border{
+    width: 100%;
+    position: relative;
+    top: 15px;
+    background-color: transparent;
+    border-bottom: 15px solid transparent;
+    -webkit-border-image: url("../images/design/navborder.png") 80 round; /* Safari 3.1-5 */
+    -o-border-image: url("../images/design/navborder.png") 80 round; /* Opera 11-12.1 */
+    border-image: url("../images/design/navborder.png") 80 round;
+}
+.cl-effect-4 a {
+	padding: 0 0 10px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+    background-image: url("../images/design/label.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 20px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+/* ------------------- Back to top section -------------------*/
+a.back-to-top {
+	display: none;
+	width: 100px;
+	height: 84px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: url("../images/design/back_button.png") no-repeat center 100%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+a:hover.back-to-top {
+	background-color:transparent;
+}
+/* ------------------- Welcome section -------------------*/
+#logo{
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:200px;
+    left:0px;
+    right: 0px;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    z-index: 999;
+}
+#gradient{
+    margin-left: auto;
+    margin-right: auto;
+}
+#mycarousel{
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.size{
+    height: 650px;
+}
+.buttons{
+    width: 200px;
+    background-color: none;
+}
+#button{
+    background-color: #fff;
+    color: #232323;
+    border-radius:10px;
+}
+.btn-info {
+    color: #232323;
+    background-color: #fff;
+    border:none;
+}
+label{
+    color: #fff;
+}
+.modal{
+    z-index: 9999;
+}
+.modal-header{
+    border:none;
+}
+.modal h1{
+    color: #232323;
+}
+.modal label{
+    color: #231F20;
+}
+.modal-content{
+    background-image: url("../images/design/asfalt-dark.png");
+    background-color: #e7b333;
+    border: 10px solid #231F20;
+}
+.btn{
+    color: #232323;
+}
+/* ------------------- Challenge section -------------------*/
+.challenge{
+    background-color: #232323;
+    background-image: url('../images/design/bg2.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0px 52px 0px;
+    color: #000;
+    border: 10px solid #232323;
+    box-shadow: 0 0 0 2px #dab677 inset;
+    z-index: 20;
+}
+.challenge h1{
+    color: #ea8461;
+}
+.challenge p{
+    color: #fff;
+}
+.challenge button{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    width: 250px;
+    height: 105px;
+}
+.buttonimg1{
+    background-image: url('../images/design/rbutton.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ------------------- Gallery section -------------------*/
+.gallery{
+    background-color: #232323;
+    background-image: url('../images/design/bg2.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0px 50px 0px;
+    color: #000;
+    border: 11px solid #232323;
+    box-shadow: 0 0 0 2px #dab677 inset;
+    z-index: 20;
+}
+.gallery h1{
+    color: #e7b333;
+}
+.gallery p{
+    color: #fff;
+}
+.gallery button{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    width: 250px;
+    height: 105px;
+}
+.buttonimg2{
+    background-image: url('../images/design/ybutton.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ------------------- Game section -------------------*/
+.game{
+    background-color: #232323;
+    background-image: url('../images/design/bg2.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding: 40px 0px 40px 0px;
+    border: 10px solid #dab677;
+}
+
+.game h1{
+    color: #93cfb2;
+}
+.game p{
+    color: #fff;
+}
+.game button{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    width: 250px;
+    height: 105px;
+}
+.buttonimg3{
+    background-image: url('../images/design/bbutton.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gamebg{
+    background-image: url("../images/design/light-paper-fibers.png");
+    background-color: #232323;
+}
+.gamebg .row{
+    margin: 0px;
+}
+/* ------------------- About us section -------------------*/
+.about{
+    background-color: #e7b333;
+    -webkit-box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+    -moz-box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+    box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+    background-image: url('../images/design/textured-stripes.png');
+    color: #fff;
+}
+.about h1{
+    color: #000;
+}
+/* ------------------- Team section -------------------*/
+.team{
+    background-color: #fbeed5;
+    background-image: url('../images/design/arches.png');
+    color: #000;
+}
+.galallal h1{
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    background-image: url("../images/design/banneronly.png");
+    background-size: 49%;
+}
+.img-thumbnail{
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    border-bottom:20px solid #fff;
+}
+/* ------------------- Contact section -------------------*/
+.contact{
+    background-color: #b99556;
+    background-image: url('../images/design/crisp-paper-ruffles.png');
+    -webkit-box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+    -moz-box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+    box-shadow: inset -1px -1px 36px -3px rgba(0,0,0,1);
+}
+.contact h1{
+    color: #000;
+}
+.user{
+    margin-top: 150px;
+}
+.userinfo{
+    background-image: url("../images/design/asfalt-dark.png");
+    background-color: #e7b333;
+    border-top: 10px solid #231F20;
+    border-left: 10px solid #231F20;
+    border-bottom: 10px solid #231F20;
+    padding: 30px 10px;
+    height: 650px;
+}
+.userinfo img{
+    width: 200px;
+}
+.userinfo h1{
+    color: #232323;
+}
+.achievements{
+    background-image: url("../images/design/asfalt-dark.png");
+    background-color: #e7b333;
+    border-top: 10px solid #231F20;
+    border-right: 10px solid #231F20;
+    border-bottom: 10px solid #231F20;
+    padding: 30px 10px;
+    height: 650px;
+}
+.achievements h1{
+    color: #232323;
+}
+.achbutt{
+    float:right; 
+    margin-right:100px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.achbutt a:hover{
+    background-color: #232323;
+    color: #fff;
+    float:right; 
+    margin-right:100px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.personalgallery{
+    margin-top: 10px;
+}
+.profile-img{
+    border-radius: 5px;
+    border: 10px solid #fff;
+    border-bottom: 50px solid #fff;
+    margin: 0px 0px 10px 0px;
+}
+thead{
+    background-color: #232323;
+    color: #fff;
+}
+td{
+    background-color: #fff;
+    color: #232323;
+}
+/* ------------------- Gallery page section -------------------*/
+.maingallery{
+    background-color: #1c1c1a;
+}
+.wall{
+    background-color: #e7b333;
+    background-image: url('../images/design/crisp-paper-ruffles.png'); 
+    border-top: 35px solid #1c1c1a;
+    -webkit-border-image: url('../images/design/label.png') 265 round; /* Safari 3.1-5 */
+    -o-border-image: url('../images/design/label.png') 265 round; /* Opera 11-12.1 */
+    border-image: url('../images/design/label.png') 265 round;
+}
+.searchgallery{
+    margin-right: auto;
+    margin-left: auto;
+}
+.galinfo{
+    color: #232323;
+}
+.galleryinfo{
+    background-color: transparent;
+    color: #232323;
+    margin-top: -50px;
+    height: 50px;
+    font-size: 14px;
+    z-index: 9999;
+}
+.galimage{
+    width: 100%;
+}
+.maingallery footer{
+    background-color: #1c1c1a;
+    color: #fff;
+}
+.maingallery footer h1{
+    color: #fff;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #232323;
+}
+.nav-justified>li>a {
+    background-color: #fff;
+    color: #232323;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* ------------------- Game page section -------------------*/
+.maingame h1{
+    color: #93cfb2;
+}
+.maingame footer{
+    background-color: #1c1c1a;
+    color: #fff;
+}
+.maingame footer h1{
+    color: #fff;
+}
+.wall-game{
+    padding: 40px 0px 40px 0px;
+    background-color: #93cfb2;
+    background-image: url('../images/design/crisp-paper-ruffles.png'); 
+    border-top: 35px solid #1c1c1a;
+    -webkit-border-image: url('../images/design/label.png') 265 round; /* Safari 3.1-5 */
+    -o-border-image: url('../images/design/label.png') 265 round; /* Opera 11-12.1 */
+    border-image: url('../images/design/label.png') 265 round;
+}
+/* ------------------- Map page section -------------------*/
+#mapid { 
+    height: 720px;
+}
+.mainmap h1{
+    color: #ea8461;
+}
+.mainmap footer{
+    background-color: #232323;
+    color: #fff;
+}
+/* ------------------- Footer section -------------------*/
+footer{
+    background-color: #e7b333;
+    color: #000;
+}
+footer h1{
+    color: #000;
+}
+footer i{
+    color: #fff;
+}
+/* ------------------- Media Querys ------------------- */
+@media (max-width: 720px) {
+    .container{
+        padding: 20px 20px 20px 20px;
+    }
+    .welcome h2{
+        font-size: 20px;
+    }
+    #gradientleft{
+        display: none;
+    }
+    #gradient{
+        height: 50%;
+    }
+    #brand{
+        display: none;
+    }
+    #hide{
+        display: none;
+    }
+    #move{
+        margin-top: -250px;
+    }
+    #logo{
+        top: 70px;
+        width: 90%;
+        height: 50%;
+    }
+    #mycarousel{
+        height: 200px;
+    }
+    #newpadding{
+        padding: 0px;
+    }
+    .options{
+        border: none;
+    }
+    .game{
+        border: none;
+    }
+    .user{
+        margin-top: 50px;
+    }
+    .userinfo{
+        border-right: 10px solid #231F20;
+        border-bottom: none;
+    }
+    .achievements{
+        border-left: 10px solid #231F20;
+        border-top: none;
+    }
+    #googleimg{
+        width: 100%;
+    }
+    .size{
+        height: auto;
+    }
+}
+@media(max-width){}

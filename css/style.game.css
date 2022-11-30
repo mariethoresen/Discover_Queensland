@@ -1,0 +1,59 @@
+/***************************************************************************************
+*    Title: How to Create a Memory Game (ala Super Mario 3) with Plain JavaScript
+*    Author: Tania Rascia
+*    Date: February 2018
+*    Availability: https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
+*
+***************************************************************************************/
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+.card,
+.back,
+.front {
+    height: 200px;
+    width: 200px;
+}
+
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: #FAB942 url('../images/question.png') no-repeat center center / contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(0,0,0,0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match .front {
+    background: #FAB942 url('../images/tick.png') no-repeat center center / contain !important;
+}
